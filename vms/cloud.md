@@ -7,6 +7,8 @@ VM Network IP: 172.16.1.2/24
 ## Software
 - ACME Let’s Encrypt
 - WireGuard
+  - Local VPN
+  - Public IP
 - Dovecot
 - Postfix
   - main.cf:`smtp_address_preference = ipv4`
