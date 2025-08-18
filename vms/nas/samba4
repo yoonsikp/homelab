@@ -1,0 +1,20 @@
+
+config samba
+	option workgroup 'WORKGROUP'
+	option charset 'UTF-8'
+	option description 'NAS'
+	option interface 'lan lan2'
+	option disable_netbios '1'
+	option macos '1'
+
+config sambashare
+	option name 'media'
+	option path '/mnt/nvme0n1p1'
+	option read_only 'no'
+	option users 'user'
+	option guest_ok 'no'
+	option create_mask '666'
+	option dir_mask '777'
+	option timemachine_maxsize '500'
+	option inherit_owner 'yes'
+
