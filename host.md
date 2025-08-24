@@ -167,10 +167,10 @@ GRUB_CMDLINE_LINUX_DEFAULT="rootflags=data=journal intel_iommu=on iommu=pt preem
 
 ```
 # cat /etc/modprobe.d/vfio.conf
-options vfio
-options vfio_iommu_type1
-options vfio_virqfd
-options vfio_pci ids=8086:591d disable_vga=1
+vfio
+vfio_iommu_type1
+vfio_virqfd
+vfio_pci ids=8086:591d disable_vga=1
 ```
 
 ```
