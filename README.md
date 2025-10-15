@@ -25,8 +25,9 @@ vms/
 - AMD
 - uPD720201
 
-### SATA
-- ASM1153e
+### SATA / NVMe
+- ASM1153e (SATA @5Gbps)
+- RTL9210B-CG (SATA + NVMe @10Gbps)
 
 ### WiFi
 - AR9271 (USB - Linux)
