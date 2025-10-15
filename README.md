@@ -15,10 +15,10 @@ vms/
 ## List of Good Chipsets
 
 ### Ethernet - (Disable ASPM)
-- RTL8126
-- AQC113
-- i210LM
-- RTL8156BG
+- RTL8126 (PCIe)
+- AQC113 (PCIe)
+- i210LM (PCIe)
+- RTL8156BG (USB @5Gbps)
 
 ### USB 
 - Intel
