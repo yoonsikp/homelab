@@ -40,7 +40,7 @@ vms/
 ## Name and Shame (Poor quality)
 ### Ethernet
 - RTL8125
-- RTL8156
+- RTL8153
 - i225
 - i226
 
