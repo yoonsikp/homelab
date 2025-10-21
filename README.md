@@ -21,8 +21,8 @@ vms/
 - RTL8156BG (USB @5Gbps)
 
 ### USB 
-- Intel
-- AMD
+- Intel Chipset
+- AMD Chipset
 - uPD720201
 
 ### SATA / NVMe
@@ -31,8 +31,22 @@ vms/
 
 ### WiFi
 - AR9271 (USB - Linux)
+- AR9382 (mPCIe)
 - AR9462 (mPCIe)
 - MT7916 (mPCIe)
 - Intel WiFI in General (mPCIe)
+
+
+## Name and Shame (Poor quality)
+### Ethernet
+- RTL8125
+- RTL8156
+- i225
+- i226
+
+### USB
+- ASM1142
+- ASM3142
+
 
 
