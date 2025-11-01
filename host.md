@@ -167,10 +167,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="rootflags=data=journal intel_iommu=on iommu=pt preem
 
 ```
 # cat /etc/modprobe.d/vfio.conf
-vfio
-vfio_iommu_type1
-vfio_virqfd
-vfio_pci ids=8086:591d disable_vga=1
+options vfio_pci ids=8086:591d disable_vga=1
 ```
 
 ```
@@ -214,6 +211,12 @@ Run custom scripts if desired
 	echo "Power has returned on UPS ${2}..." | ${WALL}
 	ssh -o BatchMode=yes -o ConnectTimeout=10 -i /home/yoonsik/.ssh/id_rsa administrator@winnie shutdown /a
     ;;
+```
+
+### Install yggdrasil
+
+```
+apk add yggdrasil
 ```
 
 ### Security Hardening
