@@ -1,6 +1,4 @@
 # jellyfin server
-VM Network IP: 172.16.1.7/24
-
 Install Debian. Install jellyfin. https://jellyfin.org/downloads/linux
 
 ```
