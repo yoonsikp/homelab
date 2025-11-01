@@ -26,6 +26,6 @@ WEB_VAULT_FOLDER=/usr/share/webapps/vaultwarden-web
 DISABLE_ICON_DOWNLOAD=true
 SIGNUPS_ALLOWED=false
 
-ROCKET_ADDRESS=0.0.0.0
+ROCKET_ADDRESS=::
 
 ```
