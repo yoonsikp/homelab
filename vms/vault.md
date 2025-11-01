@@ -1,5 +1,4 @@
 # vault
-VM Network IP: 172.16.1.4/24
 
 ## Software
 Alpine Linux, install with `export SWAP_SIZE=0`
