@@ -1,12 +1,10 @@
 # host
-LAN Network IP: 172.16.0.2/24
-VM Network IP: 172.16.1.1/24
 
 ## Hardware
-- Intel E3-1245v6
-- 32GB DDR4 ECC
-- 128GB Crucial SATA SSD (MLC)
-- 2 x 6TB WD Red HDD (CMR)
+- AMD Ryzen AI 9 HX PRO 370
+- 96GB DDR5 UDIMM ECC
+- 16GB Intel Optane SSD (3D XPoint)
+- 2 x 26TB Seagate HDD (HAMR + CMR)
 - 2 x 512GB Samsung NVMe SSD (MLC)
 
 ## ZFS Storage
@@ -162,7 +160,7 @@ kernel/drivers/vfio/pci/vfio-pci.ko.*
 
 ```
 # cat /etc/default/grub; sudo update-grub
-GRUB_CMDLINE_LINUX_DEFAULT="rootflags=data=journal intel_iommu=on iommu=pt preempt=full pcie_acs_override=downstream,multifunction initcall_blacklist=sysfb_init video=simplefb:off video=vesafb:off video=efifb:off video=vesa:off disable_vga=1 modprobe.blacklist=radeon,nouveau,nvidia,nvidiafb,nvidia-gpu,snd_hda_intel,snd_hda_codec_hdmi,i915"
+GRUB_CMDLINE_LINUX_DEFAULT="rootflags=data=journal intel_iommu=on iommu=pt preempt=full pcie_acs_override=downstream,multifunction initcall_blacklist=sysfb_init video=simplefb:off video=vesafb:off video=efifb:off video=vesa:off disable_vga=1 modprobe.blacklist=amdgpu,radeon,nouveau,nvidia,nvidiafb,nvidia-gpu,snd_hda_intel,snd_hda_codec_hdmi,i915"
 ```
 
 ```
