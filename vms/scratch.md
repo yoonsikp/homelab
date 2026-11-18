@@ -1,4 +1,0 @@
-# scratch
-
-- PyKMS
-- Mumble

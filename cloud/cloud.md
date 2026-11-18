@@ -1,5 +1,4 @@
 # cloud
-VM Network IP: 172.16.1.2/24
 
 ## Specs
 - Public IP: 173.211.12.1/32
@@ -7,8 +6,9 @@ VM Network IP: 172.16.1.2/24
 ## Software
 - UFW
 - ACME Let’s Encrypt
+  - User: acme
+  - See acme.txt
 - WireGuard
-  - Local VPN
   - Public IP
 - Dovecot
 - Postfix

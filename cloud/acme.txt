@@ -1,0 +1,13 @@
+export CF_Token="sdfsdfsdfljlbjkljlkjsdfoiwje"
+
+export CF_Email="xxxx@sss.com"
+
+export MAIL_TO="alerts@naut.ca"
+
+acme.sh --set-default-ca --server letsencrypt
+
+acme.sh --issue -d naut.ca -d '*.naut.ca' --keylength ec-384 --dns dns_cf --force
+
+acme.sh --install-cert -d naut.ca -d '*.naut.ca' --key-file /etc/ssl/private/naut.ca.key --fullchain-file /etc/ssl/certs/naut.ca.pem --reloadcmd "sudo postfix reload; sudo dovecot reload; sudo service nginx reload" --ecc --force
+
+acme.sh --set-notify --notify-hook mail
