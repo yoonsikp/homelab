@@ -1,7 +1,5 @@
 export CF_Token="sdfsdfsdfljlbjkljlkjsdfoiwje"
 
-export CF_Email="xxxx@sss.com"
-
 export MAIL_TO="alerts@naut.ca"
 
 acme.sh --set-default-ca --server letsencrypt
