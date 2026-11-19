@@ -46,7 +46,7 @@ To                         Action      From
 - Borg Backup
 - idevicebackup2
 - virtiofs passthrough of backups
-
+- unattended-upgrades?
 ```
 # /etc/fstab
 rust_backups    /rust/backups   virtiofs        rw,noatime,_netdev,nofail
