@@ -30,5 +30,11 @@ iface enx82b364582913 inet6 auto
 
 ra_defrtr_metric --> deprioritize this ipv6 route compared to others (1024)
 
+pymobiledevice3 backup2 backup --full DIRECTORY
+
+
+pymobiledevice3 backup2 backup --mobdev2 --udid <UDID> DIRECTORY
+
+pymobiledevice3 backup2 backup --mobdev2-host 192.168.1.42 DIRECTORY
 
 
